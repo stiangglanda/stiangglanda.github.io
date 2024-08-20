@@ -6,6 +6,23 @@
 //
 // Scripts
 // 
+function calculateAge(birthDate) {
+  const today = new Date();
+  const birthDateObj = new Date(birthDate);
+  let age = today.getFullYear() - birthDateObj.getFullYear();
+  const monthDifference = today.getMonth() - birthDateObj.getMonth();
+
+  // If birth month hasn't happened yet or it is the same month but birthdate hasn't happened yet, subtract one year
+  if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDateObj.getDate())) {
+      age--;
+  }
+
+  return age;
+}
+
+// Set the birthdate here
+const birthDate = '2003-11-25'; // Replace with your actual birthdate
+document.getElementById('age').innerText = calculateAge(birthDate);
 
 let slideIndex = 1;
 showSlides(slideIndex);
