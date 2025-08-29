@@ -4,20 +4,20 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1756412444|741126681';
+const CACHE_VERSION = '1756489910|4025360095';
 /** @type {string} */
 const CACHE_PREFIX = 'MinimalTowerDefe-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
 /** @type {string} */
-const OFFLINE_URL = 'minimalTowerDefence.offline.html';
+const OFFLINE_URL = 'MinimalTowerDefence.offline.html';
 /** @type {boolean} */
 const ENSURE_CROSSORIGIN_ISOLATION_HEADERS = true;
 // Files that will be cached on load.
 /** @type {string[]} */
-const CACHED_FILES = ["minimalTowerDefence.html","minimalTowerDefence.js","minimalTowerDefence.offline.html","minimalTowerDefence.icon.png","minimalTowerDefence.apple-touch-icon.png","minimalTowerDefence.audio.worklet.js","minimalTowerDefence.audio.position.worklet.js"];
+const CACHED_FILES = ["MinimalTowerDefence.html","MinimalTowerDefence.js","MinimalTowerDefence.offline.html","MinimalTowerDefence.icon.png","MinimalTowerDefence.apple-touch-icon.png","MinimalTowerDefence.audio.worklet.js","MinimalTowerDefence.audio.position.worklet.js"];
 // Files that we might not want the user to preload, and will only be cached on first load.
 /** @type {string[]} */
-const CACHEABLE_FILES = ["minimalTowerDefence.wasm","minimalTowerDefence.pck"];
+const CACHEABLE_FILES = ["MinimalTowerDefence.wasm","MinimalTowerDefence.pck"];
 const FULL_CACHE = CACHED_FILES.concat(CACHEABLE_FILES);
 
 self.addEventListener('install', (event) => {
