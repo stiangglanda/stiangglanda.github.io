@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1756554825|80775287';
+const CACHE_VERSION = '1756557017|58691021';
 /** @type {string} */
 const CACHE_PREFIX = 'MinimalTowerDefe-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
