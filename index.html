@@ -873,19 +873,28 @@
                     <!-- Project Container -->
                     <div class="project-container mb-5">
                         <!-- Project Title -->
-                        <h3 class="project-title mb-3">Custom Linux Kernel Modules</h3>
+                        <h3 class="project-title mb-3">Linux Kernel Development & DRM Work</h3>
                         
                         <!-- Project Content -->
                         <div class="project-content d-flex flex-column flex-md-row justify-content-between">
                             <!-- Project Text and Icons -->
                             <div class="project-details flex-grow-1">
                                 <p class="project-description">
-                                    This repository contains two custom Linux kernel modules: one is a keylogger, and the other prevents 
-                                    software-level system shutdowns by hijacking a system call. Developed using C and Linux libraries, 
-                                    the project was driven by the desire to explore the capabilities and privileges of running code in 
-                                    kernel space. Writing these modules provided valuable experience in low-level system 
-                                    programming and kernel development. <a href="https://github.com/stiangglanda/LinuxModules">GitHub Repository</a>
-                                    <br><br><b>Technologies Used:</b><br> C, Linux Libraries
+                                    Focused on Linux kernel internals, device drivers, and the Direct Rendering Manager (DRM) subsystem.
+                                    Work includes maintaining a personal development fork used to prototype kernel changes (for learning and experimentation),
+                                    implementing an experimental syscall in that private fork to learn syscall plumbing, and working through example
+                                    Linux device drivers while studying Linux Device Drivers and the kernel driver model. <br><br>
+                                    <b>Major achievement:</b> I submitted a janitorial patch which was accepted into the mainline Linux kernel
+                                    (drivers/gpu/drm/tiny/bochs.c). This contribution modernized the driver logging call and was merged after review.
+                                    The experience taught me about the kernel review process, patch submission etiquette, and working with the DRM
+                                    maintainers. <br><br>
+                                    <b>Links:</b>
+                                    <ul>
+                                        <li><a href="https://github.com/stiangglanda/linux">Linux fork</a></li>
+                                        <li><a href="https://github.com/stiangglanda/LinuxModules">Linux Modules</a></li>
+                                        <li><a href="https://lkml.org/lkml/2025/9/8/880">Mailing-list discussion and patch series (accepted patch)</a></li>
+                                    </ul>
+                                    <b>Technologies Used:</b><br> C, Linux Libraries
                                 </p>
                                 
                                 <!-- Technology Icons -->
