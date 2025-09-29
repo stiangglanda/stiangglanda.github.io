@@ -95,7 +95,9 @@ body {
 <link rel="manifest" href="MinimalTowerDefence.manifest.json">
 <script type="text/javascript">
   function isMobileDevice() {
-    return /Mobi|Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
+	let details = navigator.userAgent;
+	let regexp = /android|iphone|kindle|ipad/i;
+	return regexp.test(details);
   }
 </script>
 	</head>
@@ -116,7 +118,7 @@ body {
 
 		<script src="MinimalTowerDefence.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"MinimalTowerDefence","experimentalVK":true,"fileSizes":{"MinimalTowerDefence.pck":1469656,"MinimalTowerDefence.wasm":38057390},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"serviceWorker":"MinimalTowerDefence.service.worker.js"};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"MinimalTowerDefence","experimentalVK":true,"fileSizes":{"MinimalTowerDefence.pck":1470376,"MinimalTowerDefence.wasm":38057390},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"serviceWorker":"MinimalTowerDefence.service.worker.js"};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
