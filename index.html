@@ -60,40 +60,80 @@
             <section class="resume-section" id="projects">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Projects</h2>
-                    
+
                     <!-- Project Container -->
                     <div class="project-container mb-5">
                         <!-- Project Title -->
-                        <h3 class="project-title mb-3">Smart Irrigation System</h3>
+                        <h3 class="project-title mb-3">Linux Kernel Development & DRM Work</h3>
                         
                         <!-- Project Content -->
                         <div class="project-content d-flex flex-column flex-md-row justify-content-between">
                             <!-- Project Text and Icons -->
                             <div class="project-details flex-grow-1">
                                 <p class="project-description">
-                                    This project is a smart irrigation system that automatically waters plants based 
-                                    on moisture levels detected by a sensor. The system records these moisture values 
-                                    in a database hosted on my home server, and the data is visualized on a website. 
-                                    The system can be built using an ESP32 with C++, and optionally Arduino, though 
-                                    without database connectivity. The project addresses the challenge of efficient 
-                                    plant care and data logging, with future plans to train an AI model on the 
-                                    collected moisture data. <a href="https://github.com/stiangglanda/WateringSystem">GitHub Repository</a>
-                                    <br><br><b>Technologies Used:</b><br> C++, ESP32, MySQL, PHP
+                                    Focused on Linux kernel internals, device drivers, and the Direct Rendering Manager (DRM) subsystem.
+                                    Work includes maintaining a personal development fork used to prototype kernel changes (for learning and experimentation),
+                                    implementing an experimental syscall in that private fork to learn syscall plumbing, and working through example
+                                    Linux device drivers while studying Linux Device Drivers and the kernel driver model. <br><br>
+                                    <b>Major achievement:</b> I submitted a janitorial patch which was accepted into the mainline Linux kernel
+                                    (drivers/gpu/drm/tiny/bochs.c). This contribution modernized the driver logging call and was merged after review.
+                                    The experience taught me about the kernel review process, patch submission etiquette, and working with the DRM
+                                    maintainers. <br><br>
+                                    <b>Links:</b>
+                                    <ul>
+                                        <li><a href="https://github.com/stiangglanda/linux">Linux fork</a></li>
+                                        <li><a href="https://github.com/stiangglanda/LinuxModules">Linux Modules</a></li>
+                                        <li><a href="https://github.com/stiangglanda/ldd3">Linux Device Drivers, 3rd Edition fork</a></li>
+                                        <li><a href="https://lkml.org/lkml/2025/9/8/880">Mailing-list discussion and patch series (accepted patch)</a></li>
+                                    </ul>
+                                    <b>Technologies Used:</b><br> C, Linux Libraries, Qemu
                                 </p>
                                 
                                 <!-- Technology Icons -->
                                 <div class="tech-icons mt-4">
-                                    <img src="assets/img/cplusplus.svg" alt="cplusplus" class="tech-icon">
-                                    <img src="assets/img/espressif.svg" alt="esp32" class="tech-icon">
-                                    <img src="assets/img/mysql.svg" alt="mysql" class="tech-icon">
-                                    <img src="assets/img/php.svg" alt="php" class="tech-icon">
+                                    <img src="assets/img/c.svg" alt="c" class="tech-icon">
+                                    <img src="assets/img/linux.svg" alt="linux" class="tech-icon">
+                                    <img src="assets/img/qemu.svg" alt="qemu" class="tech-icon">
+                                    <!-- Add more icons as needed -->
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Project Container -->
+                    <div class="project-container mb-5">
+                        <!-- Project Title -->
+                        <h3 class="project-title mb-3">Custom x86 OS Kernel</h3>
+                        
+                        <!-- Project Content -->
+                        <div class="project-content d-flex flex-column flex-md-row justify-content-between">
+                            <!-- Project Text and Icons -->
+                            <div class="project-details flex-grow-1">
+                                <p class="project-description">
+                                    This project is about developing a small custom OS kernel designed to boot on actual 
+                                    hardware, not just within a virtual machine. Built with C and x86 assembly, the kernel 
+                                    provides a hands-on exploration of low-level computing and system programming. Through 
+                                    this project, I gained a deeper understanding of computer architecture, linker scripts, 
+                                    and creating freestanding binaries. Future plans include loading and executing ELF format 
+                                    programs and implementing basic graphics display. <a href="https://github.com/stiangglanda/X86-OS-Kernel">GitHub Repository</a>
+                                    <br><br><b>Technologies Used:</b><br> C, x86 Assembly, Qemu, Docker, Grub
+                                </p>
+                                
+                                <!-- Technology Icons -->
+                                <div class="tech-icons mt-4">
+                                    <img src="assets/img/c.svg" alt="c" class="tech-icon">
+                                    <img src="assets/img/nasm.svg" alt="asm" class="tech-icon">
+                                    <img src="assets/img/qemu.svg" alt="qemu" class="tech-icon">
+                                    <img src="assets/img/docker.svg" alt="docker" class="tech-icon">
+                                    <img src="assets/img/gnu.svg" alt="grub" class="tech-icon">
                                     <!-- Add more icons as needed -->
                                 </div>
                             </div>
                             
                             <!-- Project Image -->
                             <div class="project-image mt-4 mt-md-0 ml-md-4">
-                                <img src="assets/img/WateringSystem.jpg" alt="Project Image" class="uniform-image img-fluid rounded">
+                                <img src="assets/GlandOS.gif" alt="Project Image" class="uniform-image img-fluid rounded">
                             </div>
                         </div>
                     </div>
@@ -101,34 +141,72 @@
                     <!-- Project Container -->
                     <div class="project-container mb-5">
                         <!-- Project Title -->
-                        <h3 class="project-title mb-3">DirectX 11 Game Engine</h3>
+                        <h3 class="project-title mb-3">Embedded Machine Learning</h3>
                         
                         <!-- Project Content -->
                         <div class="project-content d-flex flex-column flex-md-row justify-content-between">
                             <!-- Project Text and Icons -->
                             <div class="project-details flex-grow-1">
                                 <p class="project-description">
-                                    This project is a custom 3D game engine developed directly on Microsoft's DirectX API. Originally implemented using DirectX 9 and later upgraded to DirectX 11, 
-                                    the engine focuses on low-level programming to provide fine-grained control over GPU resources and hardware interaction. 
-                                    The development process explores concepts of efficient resource management and performance optimization, which are 
-                                    essential in both embedded systems and high-performance graphics applications. <a href="https://github.com/stiangglanda/DX11Engine">GitHub Repository</a>
-                                    <br><br><b>Technologies Used:</b><br>
-                                    C++, DirectX 11 (formerly DirectX 9), Nvidia PhysX
+                                    This project explores the challenge of deploying AI models on an ESP32 microcontroller, 
+                                    a device with extremely limited resources and no file system. The goal was to transfer a 
+                                    machine learning model from a Jupyter Notebook environment to a microcontroller, ensuring 
+                                    it runs efficiently despite the hardware constraints. By leveraging C++ for embedded programming 
+                                    and Python for model development, I successfully integrated AI capabilities into a low-power device. 
+                                    This project demonstrates the feasibility of running sophisticated AI algorithms on minimal hardware.
+                                    <a href="https://github.com/stiangglanda/EmbeddedMachineLearning">GitHub Repository</a>
+                                    <br><br><b>Technologies Used:</b><br> C++, ESP32 Controller, Python, Keras, TensorFlow
                                 </p>
                                 
                                 <!-- Technology Icons -->
                                 <div class="tech-icons mt-4">
                                     <img src="assets/img/cplusplus.svg" alt="cplusplus" class="tech-icon">
-                                    <img src="assets/img/directxbw.png" alt="php" class="tech-icon">
-                                    <img src="assets/img/NvidiaPhysx.png" alt="Nvidia Physx" class="tech-icon">
+                                    <img src="assets/img/espressif.svg" alt="esp32" class="tech-icon">
+                                    <img src="assets/img/python.svg" alt="python" class="tech-icon">
+                                    <img src="assets/img/keras.svg" alt="keras" class="tech-icon">
+                                    <img src="assets/img/tensorflow.svg" alt="tensorflow" class="tech-icon">
                                     <!-- Add more icons as needed -->
                                 </div>
                             </div>
                             
                             <!-- Project Image -->
                             <div class="project-image mt-4 mt-md-0 ml-md-4">
+                                <img src="assets/img/EmbeddedMachineLearning.jpg" alt="Project Image" class="uniform-image img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Container -->
+                    <div class="project-container mb-5">
+                        <!-- Project Title -->
+                        <h3 class="project-title mb-3">Bastionfall</h3>
+                        
+                        <!-- Project Content -->
+                        <div class="project-content d-flex flex-column flex-md-row justify-content-between">
+                            <!-- Project Text and Icons -->
+                            <div class="project-details flex-grow-1">
+                                <p class="project-description">
+                                    Bastionfall is a third-person Action RPG with online co-op, built from the ground up in C++ with Unreal Engine 5. 
+                                    It features skill-based combat and a unique "Warden's Choice" system where players can recruit powerful enemies as AI followers. 
+                                    This project emphasizes a fully server-authoritative multiplayer architecture, supports both Windows and native Linux, and has a public demo available on Steam.
+                                    <a href="https://store.steampowered.com/app/3936830/Bastionfall/">Steam Page</a> | 
+                                    <a href="https://github.com/stiangglanda/MultiplayerAction">GitHub Repository</a>
+                                    <br><br><b>Technologies Used:</b><br> C++, Unreal Engine 5, Steamworks API
+                                </p>
+                                
+                                <!-- Technology Icons -->
+                                <div class="tech-icons mt-4">
+                                    <img src="assets/img/cplusplus.svg" alt="cplusplus" class="tech-icon">
+                                    <img src="assets/img/unrealengine.svg" alt="unrealengine" class="tech-icon">
+                                    <img src="assets/img/steam.svg" alt="Steamworks" class="tech-icon">
+                                    <!-- Add more icons as needed -->
+                                </div>
+                            </div>
+
+                            <!-- Project Image -->
+                            <div class="project-image mt-4 mt-md-0 ml-md-4">
                                 <video class="uniform-image img-fluid rounded" autoplay muted controls>
-                                    <source src="assets/DX11Engine.mp4" type="video/mp4">
+                                    <source src="assets/UnrealMultiplayer.mp4" type="video/mp4">
                                 </video>
                             </div>
                         </div>
@@ -172,76 +250,285 @@
                     <!-- Project Container -->
                     <div class="project-container mb-5">
                         <!-- Project Title -->
-                        <h3 class="project-title mb-3">Linux Kernel Development & DRM Work</h3>
+                        <h3 class="project-title mb-3">DirectX 11 Game Engine</h3>
                         
                         <!-- Project Content -->
                         <div class="project-content d-flex flex-column flex-md-row justify-content-between">
                             <!-- Project Text and Icons -->
                             <div class="project-details flex-grow-1">
                                 <p class="project-description">
-                                    Focused on Linux kernel internals, device drivers, and the Direct Rendering Manager (DRM) subsystem.
-                                    Work includes maintaining a personal development fork used to prototype kernel changes (for learning and experimentation),
-                                    implementing an experimental syscall in that private fork to learn syscall plumbing, and working through example
-                                    Linux device drivers while studying Linux Device Drivers and the kernel driver model. <br><br>
-                                    <b>Major achievement:</b> I submitted a janitorial patch which was accepted into the mainline Linux kernel
-                                    (drivers/gpu/drm/tiny/bochs.c). This contribution modernized the driver logging call and was merged after review.
-                                    The experience taught me about the kernel review process, patch submission etiquette, and working with the DRM
-                                    maintainers. <br><br>
-                                    <b>Links:</b>
-                                    <ul>
-                                        <li><a href="https://github.com/stiangglanda/linux">Linux fork</a></li>
-                                        <li><a href="https://github.com/stiangglanda/LinuxModules">Linux Modules</a></li>
-                                        <li><a href="https://github.com/stiangglanda/ldd3">Linux Device Drivers, 3rd Edition fork</a></li>
-                                        <li><a href="https://lkml.org/lkml/2025/9/8/880">Mailing-list discussion and patch series (accepted patch)</a></li>
-                                    </ul>
-                                    <b>Technologies Used:</b><br> C, Linux Libraries, Qemu
+                                    This project is a custom 3D game engine developed directly on Microsoft's DirectX API. Originally implemented using DirectX 9 and later upgraded to DirectX 11, 
+                                    the engine focuses on low-level programming to provide fine-grained control over GPU resources and hardware interaction. 
+                                    The development process explores concepts of efficient resource management and performance optimization, which are 
+                                    essential in both embedded systems and high-performance graphics applications. <a href="https://github.com/stiangglanda/DX11Engine">GitHub Repository</a>
+                                    <br><br><b>Technologies Used:</b><br>
+                                    C++, DirectX 11 (formerly DirectX 9), Nvidia PhysX
                                 </p>
                                 
                                 <!-- Technology Icons -->
                                 <div class="tech-icons mt-4">
-                                    <img src="assets/img/c.svg" alt="c" class="tech-icon">
-                                    <img src="assets/img/linux.svg" alt="linux" class="tech-icon">
-                                    <img src="assets/img/qemu.svg" alt="qemu" class="tech-icon">
-                                    <!-- Add more icons as needed -->
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    <!-- Project Container -->
-                    <div class="project-container mb-5">
-                        <!-- Project Title -->
-                        <h3 class="project-title mb-3">Custom x86 OS Kernel</h3>
-                        
-                        <!-- Project Content -->
-                        <div class="project-content d-flex flex-column flex-md-row justify-content-between">
-                            <!-- Project Text and Icons -->
-                            <div class="project-details flex-grow-1">
-                                <p class="project-description">
-                                    This project is about developing a small custom OS kernel designed to boot on actual 
-                                    hardware, not just within a virtual machine. Built with C and x86 assembly, the kernel 
-                                    provides a hands-on exploration of low-level computing and system programming. Through 
-                                    this project, I gained a deeper understanding of computer architecture, linker scripts, 
-                                    and creating freestanding binaries. Future plans include loading and executing ELF format 
-                                    programs and implementing basic graphics display. <a href="https://github.com/stiangglanda/X86-OS-Kernel">GitHub Repository</a>
-                                    <br><br><b>Technologies Used:</b><br> C, x86 Assembly, Qemu, Docker, Grub
-                                </p>
-                                
-                                <!-- Technology Icons -->
-                                <div class="tech-icons mt-4">
-                                    <img src="assets/img/c.svg" alt="c" class="tech-icon">
-                                    <img src="assets/img/nasm.svg" alt="asm" class="tech-icon">
-                                    <img src="assets/img/qemu.svg" alt="qemu" class="tech-icon">
-                                    <img src="assets/img/docker.svg" alt="docker" class="tech-icon">
-                                    <img src="assets/img/gnu.svg" alt="grub" class="tech-icon">
+                                    <img src="assets/img/cplusplus.svg" alt="cplusplus" class="tech-icon">
+                                    <img src="assets/img/directxbw.png" alt="php" class="tech-icon">
+                                    <img src="assets/img/NvidiaPhysx.png" alt="Nvidia Physx" class="tech-icon">
                                     <!-- Add more icons as needed -->
                                 </div>
                             </div>
                             
                             <!-- Project Image -->
                             <div class="project-image mt-4 mt-md-0 ml-md-4">
-                                <img src="assets/GlandOS.gif" alt="Project Image" class="uniform-image img-fluid rounded">
+                                <video class="uniform-image img-fluid rounded" autoplay muted controls>
+                                    <source src="assets/DX11Engine.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Container -->
+                    <div class="project-container mb-5">
+                        <!-- Project Title -->
+                        <h3 class="project-title mb-3">Rust Systems Playground</h3>
+                        
+                        <!-- Project Content -->
+                        <div class="project-content d-flex flex-column flex-md-row justify-content-between">
+                            <!-- Project Text and Icons -->
+                            <div class="project-details flex-grow-1">
+                                <p class="project-description">
+                                    Rust Systems Playground is a collection of Rust programs designed to explore and learn the 
+                                    Rust programming language. The repository currently includes a small voxel renderer using 
+                                    the Bevy engine and a simple to-do list app. The project serves as a learning platform to 
+                                    understand Rust's unique features and capabilities. Inspired by Rust's strong reputation, 
+                                    the next step is to build a web server using Rust.
+                                    <a href="https://github.com/stiangglanda/MyRustPlayground">GitHub Repository</a>
+                                    <br><br><b>Technologies Used:</b><br> Rust, Bevy
+                                </p>
+                                
+                                <!-- Technology Icons -->
+                                <div class="tech-icons mt-4">
+                                    <img src="assets/img/rust.svg" alt="rust" class="tech-icon">
+                                    <img src="assets/img/bevy.svg" alt="bevy" class="tech-icon">
+                                    <!-- Add more icons as needed -->
+                                </div>
+                            </div>
+                            
+                            <!-- Project Image -->
+                            <div class="project-image mt-4 mt-md-0 ml-md-4">
+                                <img src="assets/img/rustProject.png" alt="Project Image" class="uniform-image img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Container -->
+                    <div class="project-container mb-5">
+                        <!-- Project Title -->
+                        <h3 class="project-title mb-3">Rust Web Server</h3>
+                        
+                        <!-- Project Content -->
+                        <div class="project-content d-flex flex-column flex-md-row justify-content-between">
+                            <!-- Project Text and Icons -->
+                            <div class="project-details flex-grow-1">
+                                <p class="project-description">
+                                    Rust Web Server is a from-scratch HTTP server implementation built in Rust, designed as a hands-on 
+                                    learning project to explore both web server architecture and Rust's systems programming capabilities. 
+                                    The server handles fundamental operations including TCP connection management, HTTP request parsing, 
+                                    routing, and static file serving. Currently featuring multi-threaded request handling with support 
+                                    for GET requests and HTTP/1.1 protocol implementation.
+                                    <a href="https://github.com/stiangglanda/RustWebServer">GitHub Repository</a>
+                                    <br><br><b>Technologies Used:</b><br> Rust
+                                </p>
+                                
+                                <!-- Technology Icons -->
+                                <div class="tech-icons mt-4">
+                                    <img src="assets/img/rust.svg" alt="rust" class="tech-icon">
+                                    <!-- Add more icons as needed -->
+                                </div>
+                            </div>
+                            
+                            <!-- Project Image -->
+                            <div class="project-image mt-4 mt-md-0 ml-md-4">
+                                <img src="assets/img/RustWebServer.jpg" alt="Project Image" class="uniform-image img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Container -->
+                    <div class="project-container mb-5">
+                        <!-- Project Title -->
+                        <h3 class="project-title mb-3">ESP32S3-MultiMedia</h3>
+                        
+                        <!-- Project Content -->
+                        <div class="project-content d-flex flex-column flex-md-row justify-content-between">
+                            <!-- Project Text and Icons -->
+                            <div class="project-details flex-grow-1">
+                                <p class="project-description">
+                                    ESP32S3-MultiMedia is a portable device built on the ESP32-S3 microcontroller featuring a 
+                                    touch screen interface with multiple apps. The project integrates a camera, heart rate sensor, 
+                                    audio system with dual speakers, and Wi-Fi connectivity. Programmed in C++ using PlatformIO, it 
+                                    offers smartphone-like functionality including: photo capture with SD card storage, image gallery, 
+                                    heart rate monitoring with graphical display, music playback, RGB LED control, and sound effects.
+                                    <a href="https://github.com/stiangglanda/ESP32S3-MultiMedia">GitHub Repository</a>
+                                    <br><br><b>Technologies Used:</b><br> C++, ESP32, PlatformIO
+                                </p>
+                                
+                                <!-- Technology Icons -->
+                                <div class="tech-icons mt-4">
+                                    <img src="assets/img/cplusplus.svg" alt="cplusplus" class="tech-icon">
+                                    <img src="assets/img/espressif.svg" alt="esp32" class="tech-icon">
+                                    <img src="assets/img/platformio.svg" alt="platformio" class="tech-icon">
+                                    <!-- Add more icons as needed -->
+                                </div>
+                            </div>
+                            
+                            <!-- Project Image -->
+                            <div class="project-image mt-4 mt-md-0 ml-md-4">
+                                <video class="uniform-image img-fluid rounded" autoplay muted controls>
+                                    <source src="assets/esp32s3multimedia.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Container -->
+                    <div class="project-container mb-5">
+                        <!-- Project Title -->
+                        <h3 class="project-title mb-3">Smart Irrigation System</h3>
+                        
+                        <!-- Project Content -->
+                        <div class="project-content d-flex flex-column flex-md-row justify-content-between">
+                            <!-- Project Text and Icons -->
+                            <div class="project-details flex-grow-1">
+                                <p class="project-description">
+                                    This project is a smart irrigation system that automatically waters plants based 
+                                    on moisture levels detected by a sensor. The system records these moisture values 
+                                    in a database hosted on my home server, and the data is visualized on a website. 
+                                    The system can be built using an ESP32 with C++, and optionally Arduino, though 
+                                    without database connectivity. The project addresses the challenge of efficient 
+                                    plant care and data logging, with future plans to train an AI model on the 
+                                    collected moisture data. <a href="https://github.com/stiangglanda/WateringSystem">GitHub Repository</a>
+                                    <br><br><b>Technologies Used:</b><br> C++, ESP32, MySQL, PHP
+                                </p>
+                                
+                                <!-- Technology Icons -->
+                                <div class="tech-icons mt-4">
+                                    <img src="assets/img/cplusplus.svg" alt="cplusplus" class="tech-icon">
+                                    <img src="assets/img/espressif.svg" alt="esp32" class="tech-icon">
+                                    <img src="assets/img/mysql.svg" alt="mysql" class="tech-icon">
+                                    <img src="assets/img/php.svg" alt="php" class="tech-icon">
+                                    <!-- Add more icons as needed -->
+                                </div>
+                            </div>
+                            
+                            <!-- Project Image -->
+                            <div class="project-image mt-4 mt-md-0 ml-md-4">
+                                <img src="assets/img/WateringSystem.jpg" alt="Project Image" class="uniform-image img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Container -->
+                    <div class="project-container mb-5">
+                        <!-- Project Title -->
+                        <h3 class="project-title mb-3">openHIDevice</h3>
+                        
+                        <!-- Project Content -->
+                        <div class="project-content d-flex flex-column flex-md-row justify-content-between">
+                            <!-- Project Text and Icons -->
+                            <div class="project-details flex-grow-1">
+                                <p class="project-description">
+                                    OpenHIDevice is a compact, programmable input peripheral that combines customizable buttons 
+                                    with mouse functionality. Built with an ESP32 microcontroller and coded in C++ using PlatformIO, 
+                                    this open-source device allows users to bind specific functions to physical buttons while also 
+                                    controlling cursor movement. Smaller than commercial alternatives like Stream Deck, OpenHIDevice 
+                                    offers a space-efficient solution for programmers, content creators, and productivity enthusiasts 
+                                    seeking a versatile input tool that can be customized for various workflows.
+                                    <a href="https://github.com/stiangglanda/OpenHIDevice">GitHub Repository</a>
+                                    <br><br><b>Technologies Used:</b><br> C++, ESP32, PlatformIO
+                                </p>
+                                
+                                <!-- Technology Icons -->
+                                <div class="tech-icons mt-4">
+                                    <img src="assets/img/cplusplus.svg" alt="cplusplus" class="tech-icon">
+                                    <img src="assets/img/espressif.svg" alt="esp32" class="tech-icon">
+                                    <img src="assets/img/platformio.svg" alt="PlatformIO" class="tech-icon">
+                                    <!-- Add more icons as needed -->
+                                </div>
+                            </div>
+                            
+                            <!-- Project Image -->
+                            <div class="project-image mt-4 mt-md-0 ml-md-4">
+                                <video class="uniform-image img-fluid rounded" autoplay muted controls>
+                                    <source src="assets/OpenHIDevice.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Container -->
+                    <div class="project-container mb-5">
+                        <!-- Project Title -->
+                        <h3 class="project-title mb-3">LVGL-Room-Booking</h3>
+                        
+                        <!-- Project Content -->
+                        <div class="project-content d-flex flex-column flex-md-row justify-content-between">
+                            <!-- Project Text and Icons -->
+                            <div class="project-details flex-grow-1">
+                                <p class="project-description">
+                                    LVGL-Room-Booking is a cost-effective room display system built with an ESP32-S3 and touch screen, 
+                                    designed as an extension for OpenIndoorMaps. These compact devices mount outside meeting spaces to 
+                                    show current and upcoming reservations in real-time. Developed in C++ with PlatformIO and the LVGL 
+                                    graphics library, this solution offers a more affordable and efficient alternative to tablets for 
+                                    room management while integrating with indoor navigation infrastructure.
+                                    <a href="https://github.com/stiangglanda/LVGL-Room-Booking">GitHub Repository</a>
+                                    <br><br><b>Technologies Used:</b><br> C++, ESP32, PlatformIO, LVGL
+                                </p>
+                                
+                                <!-- Technology Icons -->
+                                <div class="tech-icons mt-4">
+                                    <img src="assets/img/cplusplus.svg" alt="c++" class="tech-icon">
+                                    <img src="assets/img/espressif.svg" alt="esp32" class="tech-icon">
+                                    <img src="assets/img/platformio.svg" alt="PlatformIO" class="tech-icon">
+                                    <img src="assets/img/lvgl.svg" alt="lvgl" class="tech-icon">
+                                    <!-- Add more icons as needed -->
+                                </div>
+                            </div>
+                            
+                            <!-- Project Image -->
+                            <div class="project-image mt-4 mt-md-0 ml-md-4">
+                                <img src="assets/img/LVGL-Room-Booking.jpg" alt="Project Image" class="uniform-image img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Container -->
+                    <div class="project-container mb-5">
+                        <!-- Project Title -->
+                        <h3 class="project-title mb-3">OpenIndoorMaps</h3>
+                        
+                        <!-- Project Content -->
+                        <div class="project-content d-flex flex-column flex-md-row justify-content-between">
+                            <!-- Project Text and Icons -->
+                            <div class="project-details flex-grow-1">
+                                <p class="project-description">
+                                    OpenIndoorMaps is an open-source indoor navigation solution that addresses wayfinding challenges in 
+                                    complex environments like shopping centers, airports, and universities. This web application provides 
+                                    detailed indoor mapping capabilities, allowing users to easily locate destinations within large buildings. 
+                                    Built with accessibility and ease-of-use in mind, OpenIndoorMaps offers an intuitive interface that works 
+                                    across devices. The project features a functional prototype available online
+                                    <a href="https://openindoormaps.vercel.app/">OpenIndoorMaps </a><br>
+                                    <a href="https://github.com/openindoormap/openindoormaps">GitHub Repository</a>
+                                    <br><br><b>Technologies Used:</b><br> Typescript, Maplibre
+                                </p>
+                                
+                                <!-- Technology Icons -->
+                                <div class="tech-icons mt-4">
+                                    <img src="assets/img/typescript.svg" alt="typescript" class="tech-icon">
+                                    <img src="assets/img/maplibre.svg" alt="maplibre" class="tech-icon">
+                                    <!-- Add more icons as needed -->
+                                </div>
+                            </div>
+                            
+                            <!-- Project Image -->
+                            <div class="project-image mt-4 mt-md-0 ml-md-4">
+                                <img src="assets/img/openindoormaps.png" alt="Project Image" class="uniform-image img-fluid rounded">
                             </div>
                         </div>
                     </div>
@@ -275,81 +562,6 @@
                             <!-- Project Image -->
                             <div class="project-image mt-4 mt-md-0 ml-md-4">
                                 <img src="assets/mtd.gif" alt="Project Image" class="uniform-image img-fluid rounded">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Container -->
-                    <div class="project-container mb-5">
-                        <!-- Project Title -->
-                        <h3 class="project-title mb-3">Embedded Machine Learning</h3>
-                        
-                        <!-- Project Content -->
-                        <div class="project-content d-flex flex-column flex-md-row justify-content-between">
-                            <!-- Project Text and Icons -->
-                            <div class="project-details flex-grow-1">
-                                <p class="project-description">
-                                    This project explores the challenge of deploying AI models on an ESP32 microcontroller, 
-                                    a device with extremely limited resources and no file system. The goal was to transfer a 
-                                    machine learning model from a Jupyter Notebook environment to a microcontroller, ensuring 
-                                    it runs efficiently despite the hardware constraints. By leveraging C++ for embedded programming 
-                                    and Python for model development, I successfully integrated AI capabilities into a low-power device. 
-                                    This project demonstrates the feasibility of running sophisticated AI algorithms on minimal hardware.
-                                    <a href="https://github.com/stiangglanda/EmbeddedMachineLearning">GitHub Repository</a>
-                                    <br><br><b>Technologies Used:</b><br> C++, ESP32 Controller, Python, Keras, TensorFlow
-                                </p>
-                                
-                                <!-- Technology Icons -->
-                                <div class="tech-icons mt-4">
-                                    <img src="assets/img/cplusplus.svg" alt="cplusplus" class="tech-icon">
-                                    <img src="assets/img/espressif.svg" alt="esp32" class="tech-icon">
-                                    <img src="assets/img/python.svg" alt="python" class="tech-icon">
-                                    <img src="assets/img/keras.svg" alt="keras" class="tech-icon">
-                                    <img src="assets/img/tensorflow.svg" alt="tensorflow" class="tech-icon">
-                                    <!-- Add more icons as needed -->
-                                </div>
-                            </div>
-                            
-                            <!-- Project Image -->
-                            <div class="project-image mt-4 mt-md-0 ml-md-4">
-                                <img src="assets/img/EmbeddedMachineLearning.jpg" alt="Project Image" class="uniform-image img-fluid rounded">
-                            </div>
-                        </div>
-                    </div>
-
-                                        <!-- Project Container -->
-                    <div class="project-container mb-5">
-                        <!-- Project Title -->
-                        <h3 class="project-title mb-3">ESP32S3-MultiMedia</h3>
-                        
-                        <!-- Project Content -->
-                        <div class="project-content d-flex flex-column flex-md-row justify-content-between">
-                            <!-- Project Text and Icons -->
-                            <div class="project-details flex-grow-1">
-                                <p class="project-description">
-                                    ESP32S3-MultiMedia is a portable device built on the ESP32-S3 microcontroller featuring a 
-                                    touch screen interface with multiple apps. The project integrates a camera, heart rate sensor, 
-                                    audio system with dual speakers, and Wi-Fi connectivity. Programmed in C++ using PlatformIO, it 
-                                    offers smartphone-like functionality including: photo capture with SD card storage, image gallery, 
-                                    heart rate monitoring with graphical display, music playback, RGB LED control, and sound effects.
-                                    <a href="https://github.com/stiangglanda/ESP32S3-MultiMedia">GitHub Repository</a>
-                                    <br><br><b>Technologies Used:</b><br> C++, ESP32, PlatformIO
-                                </p>
-                                
-                                <!-- Technology Icons -->
-                                <div class="tech-icons mt-4">
-                                    <img src="assets/img/cplusplus.svg" alt="cplusplus" class="tech-icon">
-                                    <img src="assets/img/espressif.svg" alt="esp32" class="tech-icon">
-                                    <img src="assets/img/platformio.svg" alt="platformio" class="tech-icon">
-                                    <!-- Add more icons as needed -->
-                                </div>
-                            </div>
-                            
-                            <!-- Project Image -->
-                            <div class="project-image mt-4 mt-md-0 ml-md-4">
-                                <video class="uniform-image img-fluid rounded" autoplay muted controls>
-                                    <source src="assets/esp32s3multimedia.mp4" type="video/mp4">
-                                </video>
                             </div>
                         </div>
                     </div>
@@ -442,115 +654,6 @@
                                   <span class="SlideDot" onclick="currentSlide(1)"></span>
                                   <span class="SlideDot" onclick="currentSlide(2)"></span>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Container -->
-                    <div class="project-container mb-5">
-                        <!-- Project Title -->
-                        <h3 class="project-title mb-3">openHIDevice</h3>
-                        
-                        <!-- Project Content -->
-                        <div class="project-content d-flex flex-column flex-md-row justify-content-between">
-                            <!-- Project Text and Icons -->
-                            <div class="project-details flex-grow-1">
-                                <p class="project-description">
-                                    OpenHIDevice is a compact, programmable input peripheral that combines customizable buttons 
-                                    with mouse functionality. Built with an ESP32 microcontroller and coded in C++ using PlatformIO, 
-                                    this open-source device allows users to bind specific functions to physical buttons while also 
-                                    controlling cursor movement. Smaller than commercial alternatives like Stream Deck, OpenHIDevice 
-                                    offers a space-efficient solution for programmers, content creators, and productivity enthusiasts 
-                                    seeking a versatile input tool that can be customized for various workflows.
-                                    <a href="https://github.com/stiangglanda/OpenHIDevice">GitHub Repository</a>
-                                    <br><br><b>Technologies Used:</b><br> C++, ESP32, PlatformIO
-                                </p>
-                                
-                                <!-- Technology Icons -->
-                                <div class="tech-icons mt-4">
-                                    <img src="assets/img/cplusplus.svg" alt="cplusplus" class="tech-icon">
-                                    <img src="assets/img/espressif.svg" alt="esp32" class="tech-icon">
-                                    <img src="assets/img/platformio.svg" alt="PlatformIO" class="tech-icon">
-                                    <!-- Add more icons as needed -->
-                                </div>
-                            </div>
-                            
-                            <!-- Project Image -->
-                            <div class="project-image mt-4 mt-md-0 ml-md-4">
-                                <video class="uniform-image img-fluid rounded" autoplay muted controls>
-                                    <source src="assets/OpenHIDevice.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Container -->
-                    <div class="project-container mb-5">
-                        <!-- Project Title -->
-                        <h3 class="project-title mb-3">OpenIndoorMaps</h3>
-                        
-                        <!-- Project Content -->
-                        <div class="project-content d-flex flex-column flex-md-row justify-content-between">
-                            <!-- Project Text and Icons -->
-                            <div class="project-details flex-grow-1">
-                                <p class="project-description">
-                                    OpenIndoorMaps is an open-source indoor navigation solution that addresses wayfinding challenges in 
-                                    complex environments like shopping centers, airports, and universities. This web application provides 
-                                    detailed indoor mapping capabilities, allowing users to easily locate destinations within large buildings. 
-                                    Built with accessibility and ease-of-use in mind, OpenIndoorMaps offers an intuitive interface that works 
-                                    across devices. The project features a functional prototype available online
-                                    <a href="https://openindoormaps.vercel.app/">OpenIndoorMaps </a><br>
-                                    <a href="https://github.com/openindoormap/openindoormaps">GitHub Repository</a>
-                                    <br><br><b>Technologies Used:</b><br> Typescript, Maplibre
-                                </p>
-                                
-                                <!-- Technology Icons -->
-                                <div class="tech-icons mt-4">
-                                    <img src="assets/img/typescript.svg" alt="typescript" class="tech-icon">
-                                    <img src="assets/img/maplibre.svg" alt="maplibre" class="tech-icon">
-                                    <!-- Add more icons as needed -->
-                                </div>
-                            </div>
-                            
-                            <!-- Project Image -->
-                            <div class="project-image mt-4 mt-md-0 ml-md-4">
-                                <img src="assets/img/openindoormaps.png" alt="Project Image" class="uniform-image img-fluid rounded">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Container -->
-                    <div class="project-container mb-5">
-                        <!-- Project Title -->
-                        <h3 class="project-title mb-3">LVGL-Room-Booking</h3>
-                        
-                        <!-- Project Content -->
-                        <div class="project-content d-flex flex-column flex-md-row justify-content-between">
-                            <!-- Project Text and Icons -->
-                            <div class="project-details flex-grow-1">
-                                <p class="project-description">
-                                    LVGL-Room-Booking is a cost-effective room display system built with an ESP32-S3 and touch screen, 
-                                    designed as an extension for OpenIndoorMaps. These compact devices mount outside meeting spaces to 
-                                    show current and upcoming reservations in real-time. Developed in C++ with PlatformIO and the LVGL 
-                                    graphics library, this solution offers a more affordable and efficient alternative to tablets for 
-                                    room management while integrating with indoor navigation infrastructure.
-                                    <a href="https://github.com/stiangglanda/LVGL-Room-Booking">GitHub Repository</a>
-                                    <br><br><b>Technologies Used:</b><br> C++, ESP32, PlatformIO, LVGL
-                                </p>
-                                
-                                <!-- Technology Icons -->
-                                <div class="tech-icons mt-4">
-                                    <img src="assets/img/cplusplus.svg" alt="c++" class="tech-icon">
-                                    <img src="assets/img/espressif.svg" alt="esp32" class="tech-icon">
-                                    <img src="assets/img/platformio.svg" alt="PlatformIO" class="tech-icon">
-                                    <img src="assets/img/lvgl.svg" alt="lvgl" class="tech-icon">
-                                    <!-- Add more icons as needed -->
-                                </div>
-                            </div>
-                            
-                            <!-- Project Image -->
-                            <div class="project-image mt-4 mt-md-0 ml-md-4">
-                                <img src="assets/img/LVGL-Room-Booking.jpg" alt="Project Image" class="uniform-image img-fluid rounded">
                             </div>
                         </div>
                     </div>
@@ -739,42 +842,6 @@
                     <!-- Project Container -->
                     <div class="project-container mb-5">
                         <!-- Project Title -->
-                        <h3 class="project-title mb-3">Bastionfall</h3>
-                        
-                        <!-- Project Content -->
-                        <div class="project-content d-flex flex-column flex-md-row justify-content-between">
-                            <!-- Project Text and Icons -->
-                            <div class="project-details flex-grow-1">
-                                <p class="project-description">
-                                    Bastionfall is a third-person Action RPG with online co-op, built from the ground up in C++ with Unreal Engine 5. 
-                                    It features skill-based combat and a unique "Warden's Choice" system where players can recruit powerful enemies as AI followers. 
-                                    This project emphasizes a fully server-authoritative multiplayer architecture, supports both Windows and native Linux, and has a public demo available on Steam.
-                                    <a href="https://store.steampowered.com/app/3936830/Bastionfall/">Steam Page</a> | 
-                                    <a href="https://github.com/stiangglanda/MultiplayerAction">GitHub Repository</a>
-                                    <br><br><b>Technologies Used:</b><br> C++, Unreal Engine 5, Steamworks API
-                                </p>
-                                
-                                <!-- Technology Icons -->
-                                <div class="tech-icons mt-4">
-                                    <img src="assets/img/cplusplus.svg" alt="cplusplus" class="tech-icon">
-                                    <img src="assets/img/unrealengine.svg" alt="unrealengine" class="tech-icon">
-                                    <img src="assets/img/steam.svg" alt="Steamworks" class="tech-icon">
-                                    <!-- Add more icons as needed -->
-                                </div>
-                            </div>
-
-                            <!-- Project Image -->
-                            <div class="project-image mt-4 mt-md-0 ml-md-4">
-                                <video class="uniform-image img-fluid rounded" autoplay muted controls>
-                                    <source src="assets/UnrealMultiplayer.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Container -->
-                    <div class="project-container mb-5">
-                        <!-- Project Title -->
                         <h3 class="project-title mb-3">Shooter Game (Unreal Engine)</h3>
                         
                         <!-- Project Content -->
@@ -834,73 +901,6 @@
                             <!-- Project Image -->
                             <div class="project-image mt-4 mt-md-0 ml-md-4">
                                 <img src="assets/img/UEIndianaJones.png" alt="Project Image" class="uniform-image img-fluid rounded">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Container -->
-                    <div class="project-container mb-5">
-                        <!-- Project Title -->
-                        <h3 class="project-title mb-3">Rust Systems Playground</h3>
-                        
-                        <!-- Project Content -->
-                        <div class="project-content d-flex flex-column flex-md-row justify-content-between">
-                            <!-- Project Text and Icons -->
-                            <div class="project-details flex-grow-1">
-                                <p class="project-description">
-                                    Rust Systems Playground is a collection of Rust programs designed to explore and learn the 
-                                    Rust programming language. The repository currently includes a small voxel renderer using 
-                                    the Bevy engine and a simple to-do list app. The project serves as a learning platform to 
-                                    understand Rust's unique features and capabilities. Inspired by Rust's strong reputation, 
-                                    the next step is to build a web server using Rust.
-                                    <a href="https://github.com/stiangglanda/MyRustPlayground">GitHub Repository</a>
-                                    <br><br><b>Technologies Used:</b><br> Rust, Bevy
-                                </p>
-                                
-                                <!-- Technology Icons -->
-                                <div class="tech-icons mt-4">
-                                    <img src="assets/img/rust.svg" alt="rust" class="tech-icon">
-                                    <img src="assets/img/bevy.svg" alt="bevy" class="tech-icon">
-                                    <!-- Add more icons as needed -->
-                                </div>
-                            </div>
-                            
-                            <!-- Project Image -->
-                            <div class="project-image mt-4 mt-md-0 ml-md-4">
-                                <img src="assets/img/rustProject.png" alt="Project Image" class="uniform-image img-fluid rounded">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Container -->
-                    <div class="project-container mb-5">
-                        <!-- Project Title -->
-                        <h3 class="project-title mb-3">Rust Web Server</h3>
-                        
-                        <!-- Project Content -->
-                        <div class="project-content d-flex flex-column flex-md-row justify-content-between">
-                            <!-- Project Text and Icons -->
-                            <div class="project-details flex-grow-1">
-                                <p class="project-description">
-                                    Rust Web Server is a from-scratch HTTP server implementation built in Rust, designed as a hands-on 
-                                    learning project to explore both web server architecture and Rust's systems programming capabilities. 
-                                    The server handles fundamental operations including TCP connection management, HTTP request parsing, 
-                                    routing, and static file serving. Currently featuring multi-threaded request handling with support 
-                                    for GET requests and HTTP/1.1 protocol implementation.
-                                    <a href="https://github.com/stiangglanda/RustWebServer">GitHub Repository</a>
-                                    <br><br><b>Technologies Used:</b><br> Rust
-                                </p>
-                                
-                                <!-- Technology Icons -->
-                                <div class="tech-icons mt-4">
-                                    <img src="assets/img/rust.svg" alt="rust" class="tech-icon">
-                                    <!-- Add more icons as needed -->
-                                </div>
-                            </div>
-                            
-                            <!-- Project Image -->
-                            <div class="project-image mt-4 mt-md-0 ml-md-4">
-                                <img src="assets/img/RustWebServer.jpg" alt="Project Image" class="uniform-image img-fluid rounded">
                             </div>
                         </div>
                     </div>
